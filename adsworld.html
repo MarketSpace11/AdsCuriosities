@@ -171,28 +171,58 @@
     <!-- End of Blog Section -->
 
     <!-- Video Section -->
-    <section class="has-bg-img py-lg">
-        <div class="container text-center">
+<section class="has-bg-img py-lg">
+    <div class="container text-center">
 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-outline-primary play-control" data-toggle="modal" data-target="#exampleModalCenter">
-              <i class="ti-control-play" ></i>
-            </button>
-            <h6 class="section-title mt-4">Did you Know?</h6>
-            <h3 class="section-title mt-4">Australia is wider than the Moon. The Moon is 3,400 km in diameter, while Australia's diameter from east to west is almost 4,000 km.</h3>
-        </div>
-    </section>
-    <!-- End of Video Section -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-primary play-control" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="ti-control-play"></i>
+        </button>
+        <h6 class="section-title mt-4">See Our Intro Video</h6>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OS6f1gc2cBE?si=lX4ZR3sVjPznOMVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</section>
+<!-- End of Video Section -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <!-- Responsive Video Container -->
+            <div class="responsive-video">
+                <iframe 
+                    src="https://www.youtube.com/embed/8u-h1Obhu2I?si=WOiqxmtUOWbHT_dq" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </div>
-    <!-- end of modal -->
+</div>
+<!-- end of modal -->
+
+<!-- Inline CSS -->
+<style>
+    /* Responsive video container */
+    .responsive-video {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+        height: 0;
+        overflow: hidden;
+    }
+
+    .responsive-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
 
     <section class="has-bg-img py-0">
         <div class="container">
